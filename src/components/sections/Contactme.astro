@@ -15,7 +15,7 @@ const { id } = Astro.props;
       Ya viste todo de mí. ¿Te animarás a darle vida a tus ideas?
     </p>
   </div>
-  <div class="flex mt-10 justify-between">
+  <div id="cont-cards" class="flex mt-10 justify-between">
     <!-- AQIÍ IRA EL CORREO Y ESO -->
     <ContacIMG
       href="https://wa.me/526673283223"
@@ -39,5 +39,25 @@ const { id } = Astro.props;
 <style>
   section {
     background-image: url("http://imgfz.com/i/ryFo9cO.png");
+  }
+  @media (max-width: 700px) {
+    #cont-text-prin {
+      width: 30rem;
+      justify-content: center;
+    }
+    h5 {
+      text-align: center;
+      font-size: 2.5rem;
+    }
+    p {
+      text-align: center;
+      font-size: 1.2rem;
+    }
+    #cont-cards {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      justify-items: center;
+      gap: 4rem;
+    }
   }
 </style>

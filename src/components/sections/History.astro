@@ -4,11 +4,11 @@ import Flecha from "../reutilizables/Flecha.astro";
 ---
 
 <section>
-  <div class="inline-flex">
+  <div id="cont-text" class="inline-flex">
     <div class="left-0">
       <img src="http://imgfz.com/i/NXSIpwi.png" />
     </div>
-    <div class="justify-end w-[24.9375rem] float-right">
+    <div id="cont-text-prin" class="justify-end w-[24.9375rem] float-right">
       <h2 class="text-[4.375rem] font-bold italic text-[#FFFFFF]">
         Mi historia
       </h2>
@@ -17,7 +17,7 @@ import Flecha from "../reutilizables/Flecha.astro";
       </p>
     </div>
   </div>
-  <div class="grid place-items-center">
+  <div id="cont-cards" class="grid place-items-center">
     <!-- AQUÍ IRAN LAS CARDS SOBRE MI VIDA  -->
     <CardsSchol
       title="Mi infancia"
@@ -42,5 +42,20 @@ import Flecha from "../reutilizables/Flecha.astro";
 <style>
   section {
     background-image: url("http://imgfz.com/i/ryFo9cO.png");
+  }
+  @media (max-width: 700px) {
+    #cont-text {
+      display: block;
+    }
+    #cont-cards {
+      display: block;
+      text-align: -webkit-center;
+    }
+    #cont-text-prin {
+      width: 100%;
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
   }
 </style>

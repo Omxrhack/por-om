@@ -3,10 +3,10 @@ import SkillsIMG from "../reutilizables/SkillsIMG.astro";
 ---
 
 <section>
-  <div class="grid justify-end w-[ 29.5rem] mb-32">
-    <h3 class="text-[4.375rem] italic font-extrabold text-[#FFF] text-end">
+  <div id="cont-text-prin" class="grid justify-end w-[ 29.5rem] mb-32">
+    <h4 class="text-[4.375rem] italic font-extrabold text-[#FFF] text-end">
       Skills
-    </h3>
+    </h4>
     <p
       class="text-[1.875rem] w-[29rem] italic font-extrabold text-[#94A1B2] text-end"
     >
@@ -15,7 +15,7 @@ import SkillsIMG from "../reutilizables/SkillsIMG.astro";
   </div>
   <div>
     <!-- AQUÍ IRAN LAS SKILSS EN FORMA DE CIRCULO -->
-    <div class="grid grid-cols-4 gap-10 place-items-center">
+    <div id="cont-cards" class="grid grid-cols-4 gap-10 place-items-center">
       <SkillsIMG img="http://imgfz.com/i/jnIaLMC.png" />
       <SkillsIMG img="http://imgfz.com/i/btR0AVr.png" />
       <SkillsIMG img="http://imgfz.com/i/q5uYNHx.png" />
@@ -31,5 +31,24 @@ import SkillsIMG from "../reutilizables/SkillsIMG.astro";
 <style>
   section {
     background-image: url("http://imgfz.com/i/ryFo9cO.png");
+  }
+  @media (max-width: 700px) {
+    #cont-text-prin {
+      width: 30rem;
+      justify-content: center;
+    }
+    h4 {
+      text-align: center;
+      font-size: 2.5rem;
+    }
+    p {
+      text-align: center;
+      font-size: 1.2rem;
+    }
+    #cont-cards {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+    }
   }
 </style>

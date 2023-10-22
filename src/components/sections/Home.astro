@@ -3,7 +3,7 @@
 
 <section class="w-auto h-[100vh] grid justify-center items-center z-50">
   <div class="grid place-items-center">
-    <div class="w-[44.125rem]">
+    <div id="con-text" class="w-[44.125rem]">
       <h1 class="text-[#FFFFFE] text-[5rem] font-bold text-center">
         ¡Hola , mi nombre es Omar!
       </h1>
@@ -29,5 +29,17 @@
 <style>
   section {
     background-image: url("http://imgfz.com/i/ryFo9cO.png");
+  }
+
+  @media (max-width: 700px) {
+    h1 {
+      font-size: 3rem;
+    }
+    #con-text {
+      width: 30rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
   }
 </style>

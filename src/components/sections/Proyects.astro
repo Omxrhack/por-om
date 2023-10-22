@@ -3,11 +3,11 @@ import CardPro from "../reutilizables/CardPro.astro";
 ---
 
 <section>
-  <div class="inline-flex">
-    <div class="justify-end w-[24.9375rem] float-right">
-      <h2 class="text-[4.375rem] font-bold italic text-[#FFFFFF]">
+  <div id="cont-text" class="inline-flex">
+    <div id="cont-text-prin" class="justify-end w-[24.9375rem] float-right">
+      <h3 class="text-[4.375rem] font-bold italic text-[#FFFFFF]">
         Mis proyectos
-      </h2>
+      </h3>
       <p class="text-[1.875rem] font-bold italic text-[#94A1B2]">
         Los proyectos son una parte importante de cada profesional, te mostraré
         los proyectos mas destacables que realizé
@@ -17,7 +17,7 @@ import CardPro from "../reutilizables/CardPro.astro";
       <img src="http://imgfz.com/i/v8CYhPW.png" />
     </div>
   </div>
-  <div class="grid grid-cols-2 justify-items-center">
+  <div id="cont-cards" class="grid grid-cols-2 justify-items-center">
     <!-- AQUÍ VAN MIS PROYECTOS -->
     <CardPro
       title="Peliculas App"
@@ -53,5 +53,26 @@ import CardPro from "../reutilizables/CardPro.astro";
 <style>
   section {
     background-image: url("http://imgfz.com/i/ryFo9cO.png");
+  }
+  @media (max-width: 700px) {
+    #cont-text {
+      display: block;
+    }
+    h3 {
+      text-align: center;
+      font-size: 2.5rem;
+    }
+    p {
+      text-align: center;
+      font-size: 1.2rem;
+    }
+    #cont-text-prin {
+      width: 30rem;
+      justify-content: center;
+    }
+    #cont-cards {
+      display: grid;
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
   }
 </style>
