@@ -1,0 +1,12 @@
+---
+interface Props {
+  img: string;
+}
+const { img } = Astro.props;
+---
+
+<div
+  class="w-[10rem] h-[10rem] rounded-full grid place-items-center bg-[#7F5AF0]"
+>
+  <img src={img} class="w-[5rem] h-[5rem] mx-auto" />
+</div>

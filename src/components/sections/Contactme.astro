@@ -1,0 +1,43 @@
+---
+import ContacIMG from "../reutilizables/ContacIMG.astro";
+interface Props {
+  id: string;
+}
+const { id } = Astro.props;
+---
+
+<section id={id}>
+  <div class="grid justify-center mb-12">
+    <h5 class="text-center text-[4.375rem] text-[#FFF] italic font-bold">
+      Contactame
+    </h5>
+    <p class="text-[#94A1B2] text-center italic font-bold text-[1.875rem]">
+      Ya viste todo de mí. ¿Te animarás a darle vida a tus ideas?
+    </p>
+  </div>
+  <div class="flex mt-10 justify-between">
+    <!-- AQIÍ IRA EL CORREO Y ESO -->
+    <ContacIMG
+      href="https://wa.me/526673283223"
+      src="https://i.postimg.cc/Gt4kB8HK/Whats-App-svg.webp"
+    />
+    <ContacIMG
+      href="https://www.facebook.com/omarjr.bermejillo/"
+      src="https://i.postimg.cc/9M8dFtFz/Facebook-f-logo-2019-svg.png"
+    />
+    <ContacIMG
+      href="https://www.instagram.com/omxrhack/"
+      src="https://i.postimg.cc/0Q2GsHvL/logo-instagram.png"
+    />
+    <ContacIMG
+      href="mailto:omxrhack@gmail.com"
+      src="https://i.postimg.cc/XvgKt6Rf/5e8d2205ecc8cde3235581fc5ecfa430-icono-de-contorno-de-correo-electronico.png"
+    />
+  </div>
+</section>
+
+<style>
+  section {
+    background-image: url("http://imgfz.com/i/ryFo9cO.png");
+  }
+</style>
