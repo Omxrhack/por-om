@@ -1,0 +1,40 @@
+---
+interface Props {
+  title: string;
+  content: string;
+  image: string;
+  ref: string;
+  reftec: string;
+}
+const { title, image, content, ref, reftec } = Astro.props;
+---
+
+<div
+  class="max-w-sm rounded-lg border border-[#242629] bg-[#242629] shadow my-6"
+>
+  <a>
+    <img class="rounded-t-lg h-[30rem] w-[100%]" src={image} />
+  </a>
+  <div class="p-5">
+    <a>
+      <h5 class="mb-2 text-2xl font-bold tracking-tight text-[#7f5af0]">
+        {title}
+      </h5>
+    </a>
+    <p class="mb-3 font-normal text-[#FFF]">
+      {content}
+    </p>
+    <div class="flex justify-between mx-2">
+      <a target="_blank"
+        ><img class="h-[2rem] w-[2rem]" src={reftec} alt="github" /></a
+      >
+      <a href={ref} target="_blank"
+        ><img
+          class="h-[2rem] w-[2rem]"
+          src="http://imgfz.com/i/zwCZpcf.png"
+          alt="github"
+        /></a
+      >
+    </div>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+---
+interface Props {
+  image: string;
+  title: string;
+  content: string;
+}
+const { image, title, content } = Astro.props;
+---
+
+<!-- component -->
+<div
+  class="relative flex w-full flex-row bg-[#242629] bg-clip-border text-gray-700 shadow-md my-5"
+>
+  <div
+    class="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none g-clip-border text-gray-700"
+  >
+    <img src={image} class="h-[100%] w-[100%] object-cover" />
+  </div>
+  <div class="p-6">
+    <h4
+      class="mb-2 block text-2xl font-bold leading-snug tracking-normal text-[#7f5af0] antialiased"
+    >
+      {title}
+    </h4>
+    <p
+      class="mb-8 block font-sans text-base font-normal leading-relaxed text-[#FFF] antialiased"
+    >
+      {content}
+    </p>
+  </div>
+</div>

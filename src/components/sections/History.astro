@@ -1,0 +1,46 @@
+---
+import CardsSchol from "@/components/reutilizables/CardSchol.astro";
+import Flecha from "../reutilizables/Flecha.astro";
+---
+
+<section>
+  <div class="inline-flex">
+    <div class="left-0">
+      <img src="http://imgfz.com/i/NXSIpwi.png" />
+    </div>
+    <div class="justify-end w-[24.9375rem] float-right">
+      <h2 class="text-[4.375rem] font-bold italic text-[#FFFFFF]">
+        Mi historia
+      </h2>
+      <p class="text-[1.875rem] font-bold italic text-[#94A1B2]">
+        Mis comienzos es una parte que más destaca de mí.
+      </p>
+    </div>
+  </div>
+  <div class="grid place-items-center">
+    <!-- AQUÍ IRAN LAS CARDS SOBRE MI VIDA  -->
+    <CardsSchol
+      title="Mi infancia"
+      content="En mi infancia pasaba mucho tiempo solo por lo cual me surgió una duda de como es que funcionaban aquellas aplicaciones y/o juegos que yo solía jugar y usar, ahí fue cuando descubrí el mundo de la informática y la programación, aunque no tenía computadora en aquel tiempo me fue de mucha utilidad ir conociendo lenguajes y para que servían cada uno."
+      image="http://imgfz.com/i/diZrPuT.jpeg"
+    />
+    <Flecha />
+    <CardsSchol
+      title="Mi adolescencia"
+      content="Bueno esta etapa es la mejor de todas, aquí ya empezaba a programar con la computadora de mi familia mi primer lenguaje fue C++, hacía los ejercicios básicos como la calculadora, la obtención de valores por consola, etc. Sin embargo en la escuela donde iba enseñaban Visual Basic y también aprendí rapido, ya que tenía los conceptos de la programación muy recientes y constantes, también aprendí que para páginas web se utilizaba HTML y también lo aprendí."
+      image="http://imgfz.com/i/SduE8HU.jpeg"
+    />
+    <Flecha />
+    <CardsSchol
+      title="El yo actual"
+      content="Hoy en día sigo estudiando y aprendiendo. Estudio la universidad en la carrera de ingeniería en las tecnologías de la información y comunicación, ya he realizado varios proyectos tanto web como móvil, en lo personal me gusta más hacer móvil, sigo aprendiendo todos los días y estoy superándome día con día."
+      image="http://imgfz.com/i/oGw2rIn.jpeg"
+    />
+  </div>
+</section>
+
+<style>
+  section {
+    background-image: url("http://imgfz.com/i/ryFo9cO.png");
+  }
+</style>
