@@ -26,7 +26,11 @@ const { title, image, content, ref, reftec } = Astro.props;
     </p>
     <div class="flex justify-between mx-2">
       <a target="_blank"
-        ><img class="h-[2rem] w-[2rem]" src={reftec} alt="github" /></a
+        ><img
+          class="h-[2rem] w-[2rem] object-cover"
+          src={reftec}
+          alt="github"
+        /></a
       >
       <a href={ref} target="_blank"
         ><img
